@@ -56,29 +56,32 @@ Este software está desarrollado con:
 
 ## Roadmap
 
+Este es un resumen de las liberaciones del software.
+
 ```mermaid
 gitGraph
-   commit id: "Creación del proyecto"
+    commit id: "Creación del proyecto"
 ```
 
-El reporte no soporta acentos, por eso las características no
-tienen acentos en el cuadro.
+## Características por implementar
 
-```mermaid
-quadrantChart
-    title Prioridad de implementación de características
-    x-axis Deseable --> Requerido
-    y-axis Puede esperar --> Lo antes posible
-    quadrant-1 Primero en implementarse
-    quadrant-2 Tercero en implementarse
-    quadrant-3 Si da tiempo se implementa
-    quadrant-4 Segundo en implementarse
-    UI: [1, 1]
-    Base de datos: [0.9, 0.9]
-    Web scrapting: [0.8, 0.8]
-    Multisede: [0.45, 0.55]
-    Analsis en pantalla: [0.40, 0.34]
-    Graficos en pantalla: [0.2, 0.2]
-    Multicarrera: [0.1, 0.1]
-    Reportes en excel: [0.8, 0.25]
-    Multiusuario: [0.55, 0.1]
+- [ ] Empaquetado del PIP
+- [ ] UI: Prueba y diseño de las interfaz general de la aplicación
+    1.
+        - [ ] Pruebas de QT
+    1.
+        - [ ] Pruebas de instalación automática en PIP
+- [ ] Base de datos
+    1.
+        - [ ] Diseño de la base de datos
+    1.
+        - [ ] Carga de datos básicos
+    1.
+        - [ ] Diseño de triggers de la base de datos
+- [ ] Web scrapting
+- [ ] Multisede
+- [ ] Análisis en pantalla
+- [ ] Gráficos en pantalla
+- [ ] Multicarrera
+- [ ] Reportes en excel
+- [ ] Multiusuario
