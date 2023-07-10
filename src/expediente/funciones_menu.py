@@ -10,15 +10,15 @@ from xlsxwriter.format import Format
 from xlsxwriter.workbook import Workbook
 from xlsxwriter.worksheet import Worksheet
 
-from config import *
+from src.preeii.config import *
 from funciones_procesamiento_expediente import cargar_cursos_carrera
 from funciones_memory_reader import identificar_tipo, procesar_cursos_solicitados, procesar_expediente
-from funciones_io import leer_historial
-from funciones_xlsxwriter import generar_formatos
-from funciones_expediente import escribir_encabezado_expediente, escribir_expediente
-from funciones_web_scraping import iniciar_proceso_descarga
+from src.io.funciones_io import leer_historial
+from src.excel.funciones_xlsxwriter import generar_formatos
+from src.excel.funciones_expediente import escribir_encabezado_expediente, escribir_expediente
+from src.web_scrap.funciones_web_scraping import iniciar_proceso_descarga
 from funciones_procesamiento_expediente import procesar_archivos_expedientes
-from funciones_consola import clear, leer_rango_numeros_enteros
+from src.preeii.funciones_consola import clear, leer_rango_numeros_enteros
 
 
 def imprimir_finalizado() -> None:
