@@ -4,7 +4,7 @@ from xlsxwriter.workbook import Workbook
 from xlsxwriter.worksheet import Worksheet
 
 from semestre import Semestre
-from src.excel.funciones_curso import escribir_curso
+from src.preeii.funciones_curso import escribir_curso
 
 
 def escribir_semestre_listado(semestre: Semestre, cuaderno: Workbook, hoja: Worksheet, fila: int, columna: int,

@@ -10,13 +10,13 @@ from xlsxwriter.format import Format
 from xlsxwriter.workbook import Workbook
 from xlsxwriter.worksheet import Worksheet
 
-from src.preeii.config import *
+from config import *
 from funciones_procesamiento_expediente import cargar_cursos_carrera
 from funciones_memory_reader import identificar_tipo, procesar_cursos_solicitados, procesar_expediente
-from src.io.funciones_io import leer_historial
-from src.excel.funciones_xlsxwriter import generar_formatos
-from src.excel.funciones_expediente import escribir_encabezado_expediente, escribir_expediente
-from src.web_scrap.funciones_web_scraping import iniciar_proceso_descarga
+from src.preeii.funciones_io import leer_historial
+from src.preeii.funciones_xlsxwriter import generar_formatos
+from src.preeii.funciones_expediente import escribir_encabezado_expediente, escribir_expediente
+from src.preeii.funciones_web_scraping import iniciar_proceso_descarga
 from funciones_procesamiento_expediente import procesar_archivos_expedientes
 from src.preeii.funciones_consola import clear, leer_rango_numeros_enteros
 
@@ -148,7 +148,7 @@ def opcion_menu_salir() -> None:
 
 def menu(ancho: int = 60) -> None:
     ahora = datetime.now()
-    fecha_final = datetime(year=2023, month=3, day=31)
+    fecha_final = datetime(year=2023, month=7, day=25)
     duracion = fecha_final - ahora
     dias = duracion.days
     opcion: int = -1
