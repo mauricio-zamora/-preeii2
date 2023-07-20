@@ -1,6 +1,6 @@
 from typing import List, Dict, Optional
-from curso import Curso
-from historial import Historial
+from .curso import Curso
+from .historial import Historial
 
 
 class CursoCarrera(Curso):

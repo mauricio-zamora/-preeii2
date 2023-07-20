@@ -3,8 +3,8 @@ from xlsxwriter.format import Format
 from xlsxwriter.workbook import Workbook
 from xlsxwriter.worksheet import Worksheet
 
-from semestre import Semestre
-from src.preeii.funciones_curso import escribir_curso
+from .semestre import Semestre
+from .funciones_curso import escribir_curso
 
 
 def escribir_semestre_listado(semestre: Semestre, cuaderno: Workbook, hoja: Worksheet, fila: int, columna: int,

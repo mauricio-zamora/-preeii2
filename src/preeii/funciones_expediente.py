@@ -3,8 +3,8 @@ from xlsxwriter.format import Format
 from xlsxwriter.workbook import Workbook
 from xlsxwriter.worksheet import Worksheet
 
-from expediente import Expediente
-from funciones_semestre import escribir_semestre_listado, escribir_semestre
+from .expediente import Expediente
+from .funciones_semestre import escribir_semestre_listado, escribir_semestre
 
 
 def escribir_encabezado_expediente(expediente: Expediente, cuaderno: Workbook, hoja: Worksheet, fila: int, columna: int,

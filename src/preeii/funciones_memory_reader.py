@@ -1,7 +1,7 @@
 import re
 from typing import Optional, Tuple
-from src.preeii.funciones_io import *
-from src.preeii.funciones_imprimir import imprimir_cursos_solicitados
+from .funciones_io import *
+from .funciones_imprimir import imprimir_cursos_solicitados
 
 
 def identificar_tipo(texto: str) -> Optional[str]:

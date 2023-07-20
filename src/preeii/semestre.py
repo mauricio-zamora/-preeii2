@@ -1,5 +1,5 @@
 from typing import List, Dict
-from curso_carrera import CursoCarrera
+from .curso_carrera import CursoCarrera
 
 
 class Semestre:

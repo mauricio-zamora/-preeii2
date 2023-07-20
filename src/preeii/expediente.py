@@ -1,7 +1,7 @@
 from typing import List, Dict, Tuple
-from semestre import Semestre
-from curso_carrera import CursoCarrera
-from historial import Historial
+from .semestre import Semestre
+from .curso_carrera import CursoCarrera
+from .historial import Historial
 
 
 class Expediente:

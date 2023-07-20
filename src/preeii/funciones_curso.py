@@ -3,7 +3,7 @@ from xlsxwriter.format import Format
 from xlsxwriter.workbook import Workbook
 from xlsxwriter.worksheet import Worksheet
 
-from curso_carrera import CursoCarrera
+from .curso_carrera import CursoCarrera
 
 
 def escribir_curso(curso: CursoCarrera, cuaderno: Workbook, hoja: Worksheet, fila: int, columna: int,

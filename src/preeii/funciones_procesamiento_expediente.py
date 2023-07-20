@@ -8,13 +8,13 @@ from xlsxwriter.format import Format
 from xlsxwriter.workbook import Workbook
 from xlsxwriter.worksheet import Worksheet
 
-from src.preeii.config import *
-from semestre import Semestre
-from curso_carrera import CursoCarrera
-from expediente import Expediente
-from src.preeii.funciones_io import leer_historial
-from src.preeii.funciones_xlsxwriter import generar_formatos
-from src.preeii.funciones_expediente import escribir_encabezado_expediente, escribir_expediente
+from .config import *
+from .semestre import Semestre
+from .curso_carrera import CursoCarrera
+from .expediente import Expediente
+from .funciones_io import leer_historial
+from .funciones_xlsxwriter import generar_formatos
+from .funciones_expediente import escribir_encabezado_expediente, escribir_expediente
 
 
 def cargar_cursos_carrera(listado_cursos: List) -> Tuple[Dict[str, CursoCarrera], Dict[int, Semestre], Expediente]:
