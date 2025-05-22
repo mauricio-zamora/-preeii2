@@ -151,7 +151,7 @@ def opcion_menu_salir() -> None:
 
 def menu(ancho: int = 60) -> None:
     ahora = datetime.now()
-    fecha_final = datetime(year=2024, month=12, day=31)
+    fecha_final = datetime(year=2026, month=2, day=28)
     duracion = fecha_final - ahora
     dias = duracion.days
     opcion: int = -1
