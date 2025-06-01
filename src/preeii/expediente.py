@@ -8,8 +8,8 @@ class Expediente:
     def __init__(self) -> None:
         self.__semestres: Dict[int, Semestre] = {}
         self.__siglas: List[str] = []
-        self.__optativos: List = []
-        self.__otros_cursos: List = []
+        self.__optativos: List[Dict[str, str]] = []
+        self.__otros_cursos: List[Dict[str, str]] = []
         self.__carne: str = ''
         self.__nombre: str = ''
 
@@ -17,23 +17,21 @@ class Expediente:
         return self.__carne
 
     def set_carne(self, carne: str):
-        if carne is not None:
-            self.__carne = carne
+        self.__carne = carne
 
     def get_nombre(self) -> str:
         return self.__nombre
 
     def set_nombre(self, nombre: str):
-        if nombre is not None:
-            self.__nombre = nombre
+        self.__nombre = nombre
 
     def get_siglas(self) -> List[str]:
         return self.__siglas
 
-    def get_optativos(self) -> List[str]:
+    def get_optativos(self) -> List[Dict[str, str]]:
         return self.__optativos
 
-    def get_otros_cursos(self) -> List[str]:
+    def get_otros_cursos(self) -> List[Dict[str, str]]:
         return self.__otros_cursos
 
     def obtener_semestres(self) -> Dict[int, Semestre]:
@@ -74,8 +72,7 @@ class Expediente:
         try:
             nota = str(float(nota))
         except (ValueError, TypeError):
-            if nota is None:
-                nota = ''
+            nota = ''
         # print(dicc)
         encontro: bool = False
         for semestre in self.obtener_semestres().values():
