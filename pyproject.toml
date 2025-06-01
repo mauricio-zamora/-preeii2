@@ -29,3 +29,6 @@ dependencies = [
 [project.urls]
 "Homepage" = "https://github.com/mauricio-zamora/preeii"
 "Bug Tracker" = "https://github.com/mauricio-zamora/preeii/issues"
+
+[project.scripts]
+preeii = "preeii.main:main" # Asume que tienes una función main() en preeii/main.py

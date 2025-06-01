@@ -42,9 +42,16 @@ implementar:
    quienes usen este software tengan las últimas versiones y evitar que se ejecuten
    versiones antiguas.
 7. Distribución del software a través del Python Package Index (PyPI), conocido como "pip",
-   dado que muchos de los potenciales usuarios no poseen conocimiento sobre programación
-   en Python. La anterior forma de "compartir la aplicación" requería ejecutar muchas
-   tareas técnicas.
+   dado que muchos de los potenciales usuarios no poseen conocimiento sobre programación.
+   Esto simplifica enormemente la instalación.
+
+## Instalación
+
+Puedes instalar PreEII directamente desde PyPI usando pip:
+
+```bash
+pip install preeii
+```
 
 ## Características técnicas de la aplicación
 
@@ -53,6 +60,23 @@ Este software está desarrollado con:
 1. Python 3.10 (o superior)
 2. PySide 6 (QT para Python)
 3. SQLite 3
+
+*(Nota: Las dependencias PySide6 y SQLite3 son para futuras versiones con interfaz gráfica. La versión actual de consola utiliza las dependencias listadas en `pyproject.toml`)*
+
+## Desarrollo
+
+Si deseas contribuir al desarrollo de PreEII:
+
+1.  Clona el repositorio: `git clone https://github.com/mauricio-zamora/preeii.git`
+2.  Navega al directorio del proyecto: `cd preeii`
+3.  (Recomendado) Crea y activa un entorno virtual:
+    ```bash
+    python -m venv venv
+    # En Windows: venv\Scripts\activate
+    # En macOS/Linux: source venv/bin/activate
+    ```
+4.  Instala las dependencias de desarrollo: `pip install -r requirements.txt`
+5.  Para ejecutar la versión de desarrollo: `python -m preeii.main` (o como corresponda según tu punto de entrada).
 
 ## Roadmap
 

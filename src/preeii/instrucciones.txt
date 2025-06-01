@@ -1,3 +1,0 @@
-Ejecutar en la misma ubicación donde se encuentra el archivo reqs.txt
-
-pip install -r reqs.txt
